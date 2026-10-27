@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.so
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Data & weights (never commit — governed by data-use agreements / model licenses)
+data/
+!data/README.md
+weights/
+*.pth
+*.pt
+*.safetensors
+*.ckpt
+# ...except the tiny synthetic smoke-test checkpoint we ship as a reference
+!logs/checkpoints/smoke_student.npz
+
+# Experiment outputs (keep committed reference logs, ignore fresh runs)
+runs/
+outputs/
+wandb/
+logs/runs/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
